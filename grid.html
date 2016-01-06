@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Grid</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <style>
+  .a {
+    background-color: red;
+  }
+  .b {
+    background-color: green;
+  }
+  .c {
+    background-color: blue;
+  }
+  .d {
+    background-color: yellow;
+  }
+  </style>
+</head>
+<body>
+<p>
+The Bootstrap grid system has four classes:
+<ul>
+    <li>xs (for phones)
+    <li>sm (for tablets)
+    <li>md (for desktops)
+    <li>lg (for larger desktops)
+</ul>
+</p>
+Three equal columns 'sm': (total is 12)
+<div class="row">
+  <div class="col-sm-4 a">.col-sm-4</div>
+  <div class="col-sm-4 b">.col-sm-4</div>
+  <div class="col-sm-4 c">.col-sm-4</div>
+</div>
+
+Two unequal columns 'sm':
+<div class="row">
+    <div class="col-sm-4 d">length of 4</div>
+    <div class="col-sm-8 a">length of 8</div>
+</div>
+</body>
+</html>
