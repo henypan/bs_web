@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>1</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+<b>h1 - h6 small</b>
+<h1>hangrongpan <small>webpage</small></h1>
+<h2>hangrongpan <small>webpage</small></h2>
+<h3>hangrongpan <small>webpage</small></h3>
+<h4>hangrongpan</h4>
+<h5>hangrongpan</h5>
+<h6>hangrongpan</h6>
+Boostrap <mark>mark</mark> type <br>
+Boostrap "dl":
+  <dl>
+    <dt>Coffee</dt>
+    <dd>- black hot drink</dd>
+    <dt>Milk</dt>
+    <dd>- white cold drink</dd>
+  </dl>
+Boostrap kbd:
+This is a <kbd>kbd</kbd> <br>
+Text in pre:
+<pre>
+    public int[] twoSum(int[] numbers, int target) {
+        int [] res = new int[2];
+        if(numbers==null||numbers.length<2)
+            return res;
+        HashMap<Integer,Integer> map = new HashMap<Integer,Integer>();
+        for(int i = 0; i < numbers.length; i++){
+            if(!map.containsKey(target-numbers[i])){
+                map.put(numbers[i],i);
+            }else{
+                res[0]= map.get(target-numbers[i])+1;
+                res[1]= i+1;
+                break;
+            }
+        }
+        return res;
+    }
+</pre>
+  <p class="bg-primary">This text is important.</p>
+  <p class="bg-success">This text indicates success.</p>
+  <p class="bg-info">This text represents some information.</p>
+  <p class="bg-warning">This text represents a warning.</p>
+  <p class="bg-danger">This text represents danger.</p>
+</body>
+</html>
